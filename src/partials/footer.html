@@ -1,0 +1,64 @@
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a class="brand brand-on-dark" href="/" aria-label="کلندرو، صفحه اصلی">
+        {{> logo-mark}}
+        <span class="brand-name">کلندرو</span>
+      </a>
+      <p>کلندرو سامانه نوبت‌دهی آنلاین برای آرایشگاه‌ها، سالن‌های زیبایی و کلینیک‌های ایران است. مشتری از اپ نوبت می‌گیرد و شما همه‌چیز را از پنل مرکز مدیریت می‌کنید.</p>
+      <div class="footer-apps">
+        <a class="store-link" href="{{site.bazaar_customer}}" rel="noopener">{{icon:smartphone}}<span>اپ مشتری در کافه‌بازار</span></a>
+        <a class="store-link" href="{{site.bazaar_center}}" rel="noopener">{{icon:store}}<span>پنل مرکز در کافه‌بازار</span></a>
+      </div>
+    </div>
+
+    <nav class="footer-col" aria-label="محصول">
+      <h2 class="footer-title">محصول</h2>
+      <ul>
+        <li><a href="/features/">امکانات کلندرو</a></li>
+        <li><a href="/download/">دانلود اپلیکیشن</a></li>
+        <li><a href="/guide/centers/">راهنمای راه‌اندازی مرکز</a></li>
+        <li><a href="/guide/customers/">آموزش نوبت گرفتن</a></li>
+        <li><a href="{{site.panel_url}}" rel="noopener">ورود به پنل وب</a></li>
+      </ul>
+    </nav>
+
+    <nav class="footer-col" aria-label="کاربردها">
+      <h2 class="footer-title">کاربردها</h2>
+      <ul>
+        <li><a href="/for/salon/">نوبت‌دهی آرایشگاه زنانه</a></li>
+        <li><a href="/for/barbershop/">نوبت‌دهی آرایشگاه مردانه</a></li>
+        <li><a href="/for/beauty-clinic/">نوبت‌دهی کلینیک زیبایی</a></li>
+        <li><a href="/for/clinic/">نوبت‌دهی مطب و کلینیک</a></li>
+      </ul>
+    </nav>
+
+    <nav class="footer-col" aria-label="منابع">
+      <h2 class="footer-title">منابع</h2>
+      <ul>
+        <li><a href="/blog/">بلاگ کلندرو</a></li>
+        <li><a href="/blog/appointment-reminder-sms/">نمونه پیامک یادآوری نوبت</a></li>
+        <li><a href="/blog/reduce-no-shows/">کاهش نیامدن مشتری</a></li>
+        <li><a href="/faq/">سوالات متداول</a></li>
+        <li><a href="/about/">درباره ما و تماس</a></li>
+      </ul>
+    </nav>
+
+    <div class="footer-col footer-contact">
+      <h2 class="footer-title">تماس با کلندرو</h2>
+      <ul>
+        <!--if:site.phone--><li><a href="tel:{{site.phone_href}}">{{icon:phone}}<span dir="ltr">{{site.phone}}</span></a></li><!--endif:site.phone-->
+        <!--if:site.email--><li><a href="mailto:{{site.email}}">{{icon:mail}}<span dir="ltr">{{site.email}}</span></a></li><!--endif:site.email-->
+        <!--if:site.support_hours--><li class="footer-note">{{icon:clock}}<span>{{site.support_hours}}</span></li><!--endif:site.support_hours-->
+        <!--if:site.instagram--><li><a href="{{site.instagram}}" rel="noopener">اینستاگرام کلندرو</a></li><!--endif:site.instagram-->
+        <!--if:site.telegram--><li><a href="{{site.telegram}}" rel="noopener">کانال کلندرو</a></li><!--endif:site.telegram-->
+        <!--if:site.bale--><li><a href="{{site.bale}}" rel="noopener">کلندرو در بله</a></li><!--endif:site.bale-->
+      </ul>
+      <!--if:site.enamad_html--><div class="trust-badges">{{raw:site.enamad_html}}</div><!--endif:site.enamad_html-->
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© {{year_fa}} کلندرو. همه حقوق محفوظ است.</p>
+    <p><a href="/about/">درباره کلندرو</a></p>
+  </div>
+</footer>

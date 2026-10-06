@@ -1,0 +1,26 @@
+<header class="site-header" data-header>
+  <div class="container header-inner">
+    <a class="brand" href="/" aria-label="کلندرو، صفحه اصلی">
+      {{> logo-mark}}
+      <span class="brand-name">کلندرو</span>
+    </a>
+    <nav class="main-nav" id="main-nav" aria-label="منوی اصلی">
+      <ul>
+        <li><a href="/features/"{{nav:features}}>امکانات</a></li>
+        <li><a href="/guide/"{{nav:guide}}>راهنمای استفاده</a></li>
+        <li><a href="/for/"{{nav:for}}>کاربردها</a></li>
+        <li><a href="/faq/"{{nav:faq}}>سوالات متداول</a></li>
+        <li><a href="/blog/"{{nav:blog}}>بلاگ</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a class="btn btn-ghost" href="{{site.panel_url}}" rel="noopener">ورود به پنل مرکز</a>
+        <a class="btn btn-primary" href="/download/#center"{{nav:download}}>ثبت مرکز در کلندرو</a>
+      </div>
+    </nav>
+    <button class="nav-toggle" type="button" aria-controls="main-nav" aria-expanded="false" data-nav-toggle>
+      <span class="nav-toggle-open">{{icon:menu}}</span>
+      <span class="nav-toggle-close">{{icon:x}}</span>
+      <span class="visually-hidden">باز و بسته کردن منو</span>
+    </button>
+  </div>
+</header>

@@ -1,0 +1,14 @@
+{
+  "name": "کلندرو",
+  "short_name": "کلندرو",
+  "lang": "fa-IR",
+  "dir": "rtl",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#F4F8F7",
+  "theme_color": "#185C5C",
+  "icons": [
+    { "src": "/assets/img/logo-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/assets/img/logo-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
